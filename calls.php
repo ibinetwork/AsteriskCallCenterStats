@@ -276,8 +276,8 @@ Handlebars.registerHelper('l10n', function(keyword) {
         <div id="main">
         <div id="contents">
             <div>
-                <a href="queues.php">Очереди</a>
-                <a href="agents.php">Агенты</a>
+                <a href="queues.php">Filas</a>
+                <a href="agents.php">Аgentes</a>
             </div>
             <br/>
         <div class="channels-placeholder">null</div>
