@@ -273,6 +273,6 @@ print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
       <div class="out-placeholder"></div>
     </div>
 </div>
-<div id='footer'><a href='https://asterisk-pbx.ru'>Asterisk-pbx.ru</a> 2018</div>
+<div id='footer'></div>
 </body>
 </html>
