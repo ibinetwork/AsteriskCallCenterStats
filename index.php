@@ -586,17 +586,17 @@ echo "<option value=\"MWJ_UP\">" . $lang["$language"]['higher'] . "</option>\n";
 		</div>
 		<br />
 <p>
-<b>Синхронизировать:</b>
+<b>Sincronizar:</b>
 </p>
 <table><tr><td>
 <form method="post" action="sync.php">
 <input type=hidden name="queue_sync">
-<input type=submit value="Очереди">
+<input type=submit value="Filas">
 </form>
 </td><td>
 <form method="post" action="sync.php">
 <input type=hidden name="agent_sync">
-<input type=submit value="Агентов">
+<input type=submit value="Agentes">
 </form>
 </td></tr></table>
 	</div>
