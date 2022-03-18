@@ -286,6 +286,6 @@ $(document).ready(function() {
     });
 });
 </script>
-<div id='footer'><a href='https://asterisk-pbx.ru'>Asterisk-pbx.ru</a> 2019</div>
+<div id='footer'></div>
 </body>
 </html>
