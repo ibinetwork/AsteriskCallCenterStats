@@ -29,11 +29,11 @@ $menu[] = $lang["$language"]['menu_answered'];
 $menu[] = $lang["$language"]['ans_cdr'];
 $menu[] = $lang["$language"]['menu_unanswered'];
 $menu[] = $lang["$language"]['unans_cdr'];
-$menu[] = $lang["$language"]['outbound'];
+//$menu[] = $lang["$language"]['outbound'];
 $menu[] = $lang["$language"]['menu_distribution'];
 $menu[] = $lang["$language"]['distr_by_agents_dates'];
 $menu[] = $lang["$language"]['distr_by_agents_hours'];
-$menu[] = $lang["$language"]['trunks'];
+//$menu[] = $lang["$language"]['trunks'];
 //$menu[] = $lang["$language"]['compare'];
 
 //$menu[] = $lang["$language"]['search'];
@@ -44,11 +44,11 @@ $link[] = "answered.php";
 $link[] = "answered_cdr.php";
 $link[] = "unanswered.php";
 $link[] = "unanswered_cdr.php";
-$link[] = "outbound.php";
+//$link[] = "outbound.php";
 $link[] = "distribution.php";
 $link[] = "areport.php";
 $link[] = "qreport.php";
-$link[] = "dids.php";
+//$link[] = "dids.php";
 //$link[] = "compare.php";
 
 //$link[] = "search.php";
