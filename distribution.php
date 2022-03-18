@@ -641,7 +641,7 @@ print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
 			<BR>
 </div>
 </div>
-<div id='footer'><a href='https://asterisk-pbx.ru'>Asterisk-pbx.ru</a> 2019</div>
+<div id='footer'></div>
 <BR>
 </body>
 </html>
