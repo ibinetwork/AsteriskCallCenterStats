@@ -98,7 +98,7 @@ $lang['br']['Calls']             = "Chamadas";
 $lang['br']['agent']             = "Аgente";
 $lang['br']['avg']               = "Média";
 $lang['br']['avg_calltime']      = "Duração média";
-$lang['br']['avg_holdtime']      = "Tempo de espera médio";
+$lang['br']['avg_holdtime']      = "Tempo médio de espera";
 $lang['br']['percent']           = "%";
 $lang['br']['total']             = "Total";
 $lang['br']['calltime']          = "Tempo das chamadas";
@@ -154,8 +154,8 @@ $lang['br']['91sec']             = "91+ seg";
 // Unanswered page
 $lang['br']['unanswered_calls']    = "Chamadas Perdidas";
 $lang['br']['number_unanswered']   = "Numero de chamadas perdidas";
-$lang['br']['avg_wait_before_dis'] = "Média de tempo de espera antes de desligar";
-$lang['br']['avg_queue_pos_at_dis']= "Média de posição na antes de desligar";
+$lang['br']['avg_wait_before_dis'] = "Tempo médio de espera antes de desligar";
+$lang['br']['avg_queue_pos_at_dis']= "Posição média antes de desligar";
 $lang['br']['avg_queue_start']     = "Posição média na fila de espera";
 $lang['br']['user_abandon']        = "Abandono do cliente";
 $lang['br']['abandon']             = "Abandono";
@@ -166,7 +166,7 @@ $lang['br']['unanswered_by_period_queue'] = "Distribuição de falhas no períod
 $lang['br']['hangupposition'] = "Posição de saída";
 $lang['br']['enterposition'] = "Posição de entrada";
 $lang['br']['user_abandon_calls'] = "Cliente Abandonou";
-$lang['br']['user_abandon_calls_timeout'] = "Детализация: Таймаут";
+$lang['br']['user_abandon_calls_timeout'] = "Detalhamento: Tempo limite";
 
 // Distribution
 $lang['br']['totals']              = "Totais";
