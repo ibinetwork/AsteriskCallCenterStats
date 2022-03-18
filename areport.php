@@ -189,16 +189,16 @@ $tmp = json_encode($tmp);
         <table class="table table-sm centered" border="1">
             <thead>
                 <tr class="text-center" >
-                    <th class="text-left">Дата</th>
-                    <th>Оператор</th>
-                    <th>Время в статусе "Разговаривает", мин</th>
+                    <th class="text-left">Data</th>
+                    <th>Agente</th>
+                    <th>Tempo falando (Min)</th>
                     <!-- <th>Вне обслуж.(мин.)*</th> -->
-                    <th>Время в статусе "Пауза", мин</th>
-                    <th>Время в статусе "Свободен", мин *</th>
-                    <th>Время в статусе "На удержании", мин</th>
-                    <th>Количество вызовов, шт</th>
-                    <th>Среднее время разговора, сек</th>
-                    <th>Количество вызовов, <br/>перешедших на другого оператора в случае не ответа, шт</th>
+                    <th>Tempo em pausa (Min)</th>
+                    <th>Tempo livre (Min)</th>
+                    <th>Tempo em espera (Min)</th>
+                    <th>Numero de chamadas</th>
+                    <th>Tempo médio de conversação, (Seg)</th>
+                    <th>Número de chamadas, <br/>que mudou para outro operador em caso de não resposta</th>
                 </tr>
             </thead>
             <tbody>
@@ -228,16 +228,16 @@ $tmp = json_encode($tmp);
 <?php include "menu.php";?>
 <div id="main">
     <div id="contents">
-      <h1>Статистика по операторам за период: <?php echo $start . " - " . $end ?></h1>
+      <h1>Estatísticas do agente para o período : <?php echo $start . " - " . $end ?></h1>
       <br/>
-        <div style="float: left;">
-              <?php
-               print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
-              ?>
-        </div>
+        //<div style="float: left;">
+        //      <?php
+        //       print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf, $header_csv);
+        //      ?>
+        //</div>
         <div style="float: right;">
         <form action="#" method="get" class="">
-            <input class="form-control" style="width: 240px; height: 20px;" id="system-search" name="q" placeholder="Фильтр" required>
+            <input class="form-control" style="width: 240px; height: 20px;" id="system-search" name="q" placeholder="Filtro" required>
         </form>
         </div>
         <br/><br/><br/>
