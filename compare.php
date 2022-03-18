@@ -266,6 +266,6 @@ $connection->close();
     </div>
 </div>
 
-<div id='footer'><a href='https://asterisk-pbx.ru'>Asterisk-pbx.ru</a> 2018</div>
+<div id='footer'></div>
 </body>
 </html>
