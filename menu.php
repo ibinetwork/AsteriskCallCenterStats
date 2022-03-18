@@ -36,8 +36,8 @@ $menu[] = $lang["$language"]['distr_by_agents_hours'];
 $menu[] = $lang["$language"]['trunks'];
 //$menu[] = $lang["$language"]['compare'];
 
-$menu[] = $lang["$language"]['search'];
-$menu[] = $lang["$language"]['realtime'];
+//$menu[] = $lang["$language"]['search'];
+//$menu[] = $lang["$language"]['realtime'];
 
 $link[] = "index.php";
 $link[] = "answered.php";
@@ -51,8 +51,8 @@ $link[] = "qreport.php";
 $link[] = "dids.php";
 //$link[] = "compare.php";
 
-$link[] = "search.php";
-$link[] = "queues.php";
+//$link[] = "search.php";
+//$link[] = "queues.php";
 
 $anchor = Array();
 
