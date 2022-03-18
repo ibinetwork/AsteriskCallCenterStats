@@ -150,7 +150,7 @@ Handlebars.registerHelper("prettyDate", function (timestamp) {
   if (navigator.language == 'ru') {
      var months = ['Янв','Фев','Мар','Апр','Май','Июня','Июля','Авг','Сен','Окт','Ноя','Дек'];
    } else {
-       var months = ['Jan','Feb','Mar','Apr','May', 'Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+       var months = ['Jan','Fev','Mar','Abr','Mai', 'Jun','Jul','Ago','Set','Out','Nov','Dez'];
    }
   var year = a.getFullYear();
   var month = months[a.getMonth()];
@@ -186,10 +186,10 @@ Handlebars.registerHelper("html5Player", function (p) {
 Handlebars.registerHelper("getStatus", function (s) {
       switch (s) {
   case 'COMPLETECALLER':
-    status = '<span style="color: limegreen">Абонент</span>';
+    status = '<span style="color: limegreen">Cliente</span>';
     break;
   case 'COMPLETEAGENT':
-    status = '<span style="color: royalblue">Агент</span>';
+    status = '<span style="color: royalblue">Аgente</span>';
     break;
   }
    return status;
@@ -204,7 +204,7 @@ Handlebars.registerHelper("getStatus", function (s) {
             <table class="table centered">
                 <thead>
                     <tr class="text-center">
-                        <th class="text-left">Агент</th>
+                        <th class="text-left">Agente</th>
                         <th>Отв.</th>
                     </tr>
                 </thead>
@@ -224,15 +224,13 @@ Handlebars.registerHelper("getStatus", function (s) {
         <table id="incTable" class="table table-striped">
             <thead>
                 <tr>
-                    <th>Дата</th>
-                    <th>CalerID</th>
-                    <th>DID</th>
-                    <th>Очередь</th>
-                    <th>Агент</th>
-                    <th>Ожид.</th>
-                    <th>Разг.</th>
-                    <th>Заверш.</th>
-                    <th>Запись</th>
+                    <th>Data</th>
+                    <th>Origem</th>
+                    <th>Fila</th>
+                    <th>Agente</th>
+                    <th>Tempo de Espera</th>
+                    <th>Duração</th>
+                    <th>Evento</th>
                 </tr>
             </thead>
             <tbody>
@@ -240,14 +238,11 @@ Handlebars.registerHelper("getStatus", function (s) {
                 <tr>
                     <td>{{prettyDate callid}}</td>
                     <td>{{src}}</td>
-                    <td>{{did}}</td>
                     <td>{{queuename}}</td>
                     <td>{{agent}}</td>
                     <td>{{prettyDate wait}}</td>
                     <td>{{prettyDate dur}}</td>
                     <td>{{{getStatus event}}}</td>
-                    <td>{{{html5Player rec}}}</td>
-
                 </tr>
                 {{/each}}
             </tbody>
