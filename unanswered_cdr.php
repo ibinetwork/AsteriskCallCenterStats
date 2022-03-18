@@ -126,7 +126,6 @@ $cover_pdf .= $lang["$language"]['period'] . ": " . $period . " " . $lang["$lang
 			<TH><?php echo $lang["$language"]['holdtime']?></TH>
 			<TH><?php echo $lang["$language"]['enterposition']?></TH>
 			<TH><?php echo $lang["$language"]['hangupposition']?></TH>
-			<TH><?php echo $lang["$language"]['callid']?></TH>
        </TR>
 <?php
 $header_pdf=array($lang["$language"]['time'],$lang["$language"]['callerid'], $lang["$language"]['queue'],$lang["$language"]['event'],$lang["$language"]['holdtime'],$lang["$language"]['enterposition'],$lang["$language"]['hangupposition']);
@@ -163,7 +162,7 @@ if  (($row['event'] !== "ENTERQUEUE") ) {
  
 mysqli_free_result($resabandon); 
  
-echo "<br />Всего найдено:".$page_rows2."<br />";
+echo "<br />Total encontrado:".$page_rows2."<br />";
 print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf);
  
 echo "</table>";
@@ -175,6 +174,6 @@ print_exports($header_pdf,$data_pdf,$width_pdf,$title_pdf,$cover_pdf);
 	  <br/>	
      </div>
     </div>
-   <div id="footer"><a href='https://asterisk-pbx.ru'>Asterisk-pbx.ru</a> 2017</div>
+   <div id="footer"></div>
   </body>
  </html>
