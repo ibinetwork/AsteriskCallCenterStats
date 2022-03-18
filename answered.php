@@ -544,6 +544,6 @@ mysqli_free_result($res);
 </div>
 </div>
 
-<div id='footer'><a href='https://asterisk-pbx.ru'>Asterisk-pbx.ru</a> 2017</div>
+<div id='footer'></div>
 </body>
 </html>
