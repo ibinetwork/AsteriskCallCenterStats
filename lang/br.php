@@ -40,10 +40,20 @@ $yearp[10]= "Novembro";
 $yearp[11]= "Dezembro";
 
 // Menu options
-$lang['br']['menu_home']         = "Relatórios";
-$lang['br']['menu_answered']     = "Atendidas";
-$lang['br']['menu_unanswered']   = "Perdidas";
+$lang['br']['menu_home'] = "Relatórios";
+$lang['br']['menu_answered'] = "Atendidas";
+$lang['br']['menu_unanswered'] = "Perdidas";
 $lang['br']['menu_distribution'] = "Distribuição";
+$lang['br']['ans_cdr'] = "<== Detalhes";
+$lang['br']['unans_cdr'] = "<== Detalhes";
+$lang['br']['compare'] = "Comparação";
+$lang['br']['realtime'] = "Tempo Real";
+$lang['br']['search'] = "Busca";
+$lang['br']['regs'] = "Regs";
+$lang['br']['outbound'] = "Efetuadas";
+$lang['br']['trunks'] = "Troncos";
+$lang['br']['distr_by_agents_dates'] = "por Agentes";
+$lang['br']['distr_by_agents_hours'] = "por Hora";
 
 // tooltips
 $lang['br']['pdfhelp'] = "Exportar os dados para PDF";
@@ -140,6 +150,7 @@ $lang['br']['_60sec']            = "60 seg";
 $lang['br']['75sec']             = "75 seg";
 $lang['br']['90sec']             = "90 seg";
 $lang['br']['91sec']             = "91+ seg";
+
 // Unanswered page
 $lang['br']['unanswered_calls']    = "Chamadas Perdidas";
 $lang['br']['number_unanswered']   = "Numero de chamadas perdidas";
