@@ -2,7 +2,7 @@
 require_once "misc.php";
 
 $DBServer = 'localhost';
-$DBUser = 'freepbxuser';
+$DBUser = 'root';
 $DBPass = '';
 $DBName = 'asteriskcdrdb';
 $DBTable = 'queuelog';
@@ -17,7 +17,7 @@ if ($connection->connect_error) {
 	trigger_error('Database connection failed: ' . $connection->connect_error, E_USER_ERROR);
 }
 
-$confpbx = new mysqli('localhost', 'freepbxuser', '', 'asterisk');
+$confpbx = new mysqli('localhost', 'root', '', 'asterisk');
 $confpbx->set_charset('utf8');
 
 
@@ -48,7 +48,7 @@ $config['debug'] = false;
 
 
 // Available languages "en", "ru"
-$language = "ru";
+$language = "br";
 
 require_once "lang/$language.php";
 
