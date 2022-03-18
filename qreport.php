@@ -139,8 +139,8 @@ $queues = json_encode($queues);
         <table class="table table-sm centered">
             <thead>
                 <tr class="text-center" >
-                    <th class="text-left">Дата</th>
-                    <th>Час</th>
+                    <th class="text-left">Data</th>
+                    <th>Tempo</th>
                     <th>00</th>
                     <th>01</th>
                     <th>02</th>
@@ -171,7 +171,7 @@ $queues = json_encode($queues);
                     {{#each tbl}}
                       <tr class="text-center">
                           <td rowspan="2" scope="rowgroup">{{@key}}</td>
-                          <td>Максимальное кол-во абонентов в очереди</td>
+                          <td>Número máximo de clientes na fila </td>
                           <td>{{ifEmpty DEP.[0]}}</td>
                           <td>{{ifEmpty DEP.[1]}}</td>
                           <td>{{ifEmpty DEP.[2]}}</td>
@@ -198,7 +198,7 @@ $queues = json_encode($queues);
                           <td>{{ifEmpty DEP.[23]}}</td>
                         </tr>
                         <tr class="text-center">
-                          <td>Количество свободных операторов</td>
+                          <td>Número de agentes livres</td>
                           <td>{{ifEmpty AGENTS.[0]}}</td>
                           <td>{{ifEmpty AGENTS.[1]}}</td>
                           <td>{{ifEmpty AGENTS.[2]}}</td>
@@ -235,16 +235,16 @@ $queues = json_encode($queues);
 <?php include "menu.php";?>
 <div id="main">
     <div id="contents">
-      <h1>Статистика по операторам за период: <?php echo $start . " - " . $end ?></h1>
+      <h1>Estatísticas do agente para o período: <?php echo $start . " - " . $end ?></h1>
       <br/>
-        <div style="float: left;">
-              <?php
-               print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
-              ?>
-        </div>
+        //<div style="float: left;">
+        //      <?php
+        //       print_exports($header_pdf, $data_pdf, $width_pdf, $title_pdf, $cover_pdf);
+        //      ?>
+        //</div>
         <div style="float: right;">
         <form action="#" method="get" class="">
-            <input class="form-control" style="width: 240px; height: 20px;" id="system-search" name="q" placeholder="Фильтр" required>
+            <input class="form-control" style="width: 240px; height: 20px;" id="system-search" name="q" placeholder="Filtro" required>
         </form>
         </div>
         <br/><br/><br/>
@@ -266,7 +266,7 @@ $(document).ready(function() {
             var inputText = $(that).val().toLowerCase();
             if (inputText != '') {
                 $('.search-query-sf').remove();
-                tableBody.prepend('<tr class="search-query-sf"><td colspan="6"><strong>поиск по: "' +
+                tableBody.prepend('<tr class="search-query-sf"><td colspan="6"><strong>procurar por: "' +
                     $(that).val() +
                     '"</strong></td></tr>');
             } else {
@@ -282,11 +282,11 @@ $(document).ready(function() {
             }
         });
         if (tableRowsClass.children(':visible').length == 0) {
-            tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">Не найдено.</td></tr>');
+            tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">Não encontrado.</td></tr>');
         }
     });
 });
 </script>
-<div id='footer'><a href='https://asterisk-pbx.ru'>Asterisk-pbx.ru</a> 2019</div>
+<div id='footer'></div>
 </body>
 </html>
